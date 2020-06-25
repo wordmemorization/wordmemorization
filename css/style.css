@@ -5,21 +5,29 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(255, 255, 255, 1);
-  /* background: linear-gradient(rgba(255,255,255,1), rgba(30,20, 180,1)); */
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
+  align-items: left;
+  overflow-x: hidden; */
 }
-h1 {
-  margin: 2em 0 1.5em 0;
-}
+
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.left_margin {
+  width: 200px;
+  height: 1000px;
+  float: left;
+}
+.content {
+  width: 1600px;
+  height: 1000px;
+  float: left;
+}
+
 #main_menu > li {
   float: left;
   position: relative;
@@ -35,28 +43,68 @@ ul, li {
   display: block;
   padding: 20px 36px;
 }
-
-#main_page > h1 {
+.main_content {
+  padding-top: 80px;
+}
+.main_content > h1, h2, h3, h4{
   font_size: xx-large;
   font-weight: bold;
   font-family: "Nanum Gothic", serif;
   color : rgba(0, 0, 0, 1);
   text-align: center;
   text-decoration: none;
-  padding-top: 80px;
   letter-spacing: 0.05em;
 }
-#main_page > p {
+.main_content > p {
   font_size: large;
   font-family: "Nanum Gothic", serif;
-  color : rgba(0, 0, 0, 1);
-  text-align: center;
+  color : rgba(0,0,0,1);
+  text-align: left;
   text-decoration: none;
   letter-spacing: 0.05em;
 }
+.intro_content {
+  display: inline;
+}
 
-p {
+#team > a {
+  margin-bottom: 2em;
+}
+#team > a:link{
+  color: black;
+}
+#team > a:visited{
+  color: #8b00FF;
+}
+#team > a:active{
+  color: rgba(20, 20, 255);
+}
+
+h2 {
+  font-size: x-large;
+  font-family: arial;
+  text-align: left;
+  color : rgba(0,0,0,1);
+}
+.title {
+  font-size: x-large;
+  font-weight: bold;
+}
+.korea_content {
+  font-family: "Nanum Gothic", serif;
+  padding-top: 10px;
+}
+.feature {
+  font-size: large;
+  font-weight: 600;
+  width: 25%
+  float: left;
+}
+
+
+section > p {
   font-size: medium;
-  /* font-family: arial; */
-  color : rgba(0, 0, 0, 1);
+  font-family: arial;
+  text-align: left;
+  color : rgba(0,0,0,1);
 }
